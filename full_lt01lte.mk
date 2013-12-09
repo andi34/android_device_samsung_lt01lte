@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,11 +25,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/samsung/lt01wifi/lt01wifi.mk)
+$(call inherit-product, device/samsung/lt01lte/lt01lte.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_lt01wifi
-PRODUCT_DEVICE := lt01wifi
+PRODUCT_NAME := full_lt01lte
+PRODUCT_DEVICE := lt01lte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-T310
+PRODUCT_MODEL := SM-T315

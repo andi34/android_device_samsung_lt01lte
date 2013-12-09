@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/lt01wifi
+$(call inherit-product, device/samsung/lt013g/common.mk)
+
+LOCAL_PATH := device/samsung/lt01lte
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -26,15 +28,25 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/lt01wifi
+    device/samsung/lt013g/configs/tiny_hw.xml:system/etc/sound/lt01lte
+
+# Gps
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+
+PRODUCT_PACKAGES += \
+    Stk \
+    SamsungServiceMode
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    mobiledata.interfaces=wlan0
+    ro.telephony.ril_class=SamsungQualcommRIL \
+    mobiledata.interfaces=pdp0,wlan0,gprs,ppp0
 
-$(call inherit-product-if-exists, vendor/samsung/lt01wifi/lt01wifi-vendor.mk)
+# These are the hardware-specific features
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-$(call inherit-product, device/samsung/lt013g/common.mk)
+$(call inherit-product-if-exists, vendor/samsung/lt01lte/lt01lte-vendor.mk)
 
 $(call inherit-product, device/samsung/lt01-common/common.mk)
