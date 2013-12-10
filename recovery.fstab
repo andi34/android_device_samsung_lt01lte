@@ -5,7 +5,6 @@
 /cache           ext4         /dev/block/platform/dw_mmc/by-name/CACHE
 /system          ext4         /dev/block/platform/dw_mmc/by-name/SYSTEM
 /data            ext4         /dev/block/platform/dw_mmc/by-name/USERDATA  length=-16384
-/tombstones      ext4         /dev/block/platform/dw_mmc/by-name/TOMBSTONES
 /modem           emmc         /dev/block/platform/dw_mmc/by-name/RADIO
 
 /sdcard          datamedia    /dev/null
