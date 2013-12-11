@@ -24,6 +24,7 @@ COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{ "ril.ks.status", AID_SYSTEM, 
 
 # GPS
 BOARD_GPS_SET_PRIVACY := true
+BOARD_HAVE_NEW_QC_GPS := true
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/lt01lte/include
 
