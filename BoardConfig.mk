@@ -25,6 +25,8 @@ COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{ "ril.ks.status", AID_SYSTEM, 
 # GPS
 BOARD_GPS_SET_PRIVACY := true
 
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/lt01lte/include
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/lt01lte/bluetooth
 
