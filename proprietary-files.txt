@@ -1,4 +1,5 @@
 system/bin/at_distributor
+system/bin/diag_uart_log
 system/bin/efsks
 system/bin/geomagneticd
 system/bin/ks
@@ -47,9 +48,10 @@ system/lib/libqmi_common_so.so
 system/lib/libqmi_csi.so
 system/lib/libqmi_encdec.so
 system/lib/libqmiservices.so
+system/lib/libreference-ril.so
+system/lib/libril.so
 system/lib/libril-qc-qmi-1.so
 system/lib/libril-qcril-hook-oem.so
-system/lib/libril.so
 system/lib/libsecnativefeature.so
 system/lib/libsecril-client.so
 system/lib/libsensorservice.so
