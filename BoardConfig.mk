@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2014 OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,7 +33,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/lt01lte/bluetooth
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4x12
-TARGET_KERNEL_CONFIG := cyanogenmod_lt01lte_defconfig
+TARGET_KERNEL_CONFIG := custom_lt01lte_defconfig
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := lt01lte,lt01ltexx,SM-T315
