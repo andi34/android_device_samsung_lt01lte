@@ -35,8 +35,7 @@ PRODUCT_COPY_FILES += \
 
 # Product specific Packages
 PRODUCT_PACKAGES += \
-    Stk \
-    SamsungServiceMode
+    Stk
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
