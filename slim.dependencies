@@ -1,0 +1,27 @@
+[
+    {
+        "repository": "SlimRoms/device_samsung_smdk4412-common",
+        "target_path": "device/samsung/smdk4412-common",
+        "branch": "kk4.4"
+    },
+    {
+        "repository": "andi34/android_device_samsung_lt01-common",
+        "target_path": "device/samsung/lt01-common",
+        "branch": "kk4.4"
+    },
+    {
+        "repository": "kumajaya/android_kernel_samsung_smdk4x12",
+        "target_path": "kernel/samsung/smdk4x12",
+        "branch": "kk4.4"
+    },
+    {
+        "repository": "Cyanogenmod/android_packages_apps_SamsungServiceMode",
+        "target_path": "packages/apps/SamsungServiceMode",
+        "branch": "cm-11.0"
+    },
+    {
+        "repository": "SlimRoms/hardware_samsung",
+        "target_path": "hardware/samsung",
+        "branch": "kk4.4"
+    }
+]
