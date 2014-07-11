@@ -120,6 +120,6 @@
     <bool name="config_samsung_stk">true</bool>
 
     <!-- Enable multi-user -->
-    <!-- <integer name="config_multiuserMaximumUsers">5</integer> -->
+    <integer name="config_multiuserMaximumUsers">5</integer>
 
 </resources>
